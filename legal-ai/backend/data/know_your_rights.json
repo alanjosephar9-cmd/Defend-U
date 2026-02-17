@@ -1,0 +1,235 @@
+{
+    "scenarios": {
+        "fir": {
+            "keywords": [
+                "fir",
+                "police",
+                "arrest",
+                "complaint",
+                "criminal"
+            ],
+            "rights": [
+                "You are entitled to a free copy of the FIR from the police.",
+                "A woman can only be arrested between 6 AM and 6 PM, in the presence of a woman police officer.",
+                "You have the right to remain silent and not speak without a lawyer present.",
+                "The police must inform you of the grounds of arrest immediately."
+            ],
+            "roadmap": [
+                "Incident Occurrence",
+                "Visit Nearest Police Station",
+                "Lodge FIR (Section 154 CrPC)",
+                "Investigation by Police",
+                "Charge Sheet Filing",
+                "Court Trial"
+            ],
+            "priority_actions": [
+                {
+                    "text": "Apply for Anticipatory Bail if arrest is feared.",
+                    "priority": "CRITICAL"
+                },
+                {
+                    "text": "Lodge an FIR at the nearest police station.",
+                    "priority": "CRITICAL"
+                },
+                {
+                    "text": "Request a free copy of the FIR document.",
+                    "priority": "HIGH"
+                },
+                {
+                    "text": "Identify witnesses and record their contact info.",
+                    "priority": "RECOMMENDED"
+                }
+            ],
+            "evidence_checklist": [
+                "Photos/Videos of the incident or injury",
+                "Medical Reports (if physical assault)",
+                "Identity Proof (Aadhar/PAN)",
+                "Time and Date log of the events"
+            ],
+            "emergency_tips": [
+                "DO NOT sign any blank papers given by the police.",
+                "Ensure someone knows your location and the station name.",
+                "Note down the names and belt numbers of the officers.",
+                "If arrested, demand a medical check-up immediately."
+            ],
+            "legal_aid_url": "https://nalsa.gov.in/services/legal-aid/who-is-entitled-to-free-legal-services",
+            "recommended_template": "police_complaint"
+        },
+        "consumer": {
+            "keywords": [
+                "consumer",
+                "refund",
+                "defective",
+                "service",
+                "amazon",
+                "flipkart",
+                "fraud"
+            ],
+            "rights": [
+                "Right to be protected against marketing of hazardous goods.",
+                "Right to be informed about quality, quantity, and price.",
+                "Right to seek redressal against unfair trade practices.",
+                "Right to consumer education."
+            ],
+            "roadmap": [
+                "Purchase / Service Issue",
+                "Send Formal Notice to Seller",
+                "Wait 15 Days for Response",
+                "File Complaint in District Commission",
+                "Mediation (Optional)",
+                "Hearing and Judgment"
+            ],
+            "priority_actions": [
+                {
+                    "text": "Send a Formal Legal Notice to the seller.",
+                    "priority": "CRITICAL"
+                },
+                {
+                    "text": "Draft a complaint for the District Consumer Commission.",
+                    "priority": "HIGH"
+                },
+                {
+                    "text": "Attempt to contact customer support one last time.",
+                    "priority": "RECOMMENDED"
+                }
+            ],
+            "evidence_checklist": [
+                "Original Purchase Invoice/Receipt",
+                "Photos of the defective product",
+                "Email or Chat transcripts with support",
+                "Warranty Card/Service Book"
+            ],
+            "emergency_tips": [
+                "Do NOT throw away the original packaging or damaged item.",
+                "Take a video of the unboxing or the malfunction.",
+                "Keep all email communication chains intact.",
+                "Check for 'Hidden Terms' in the warranty card."
+            ],
+            "legal_aid_url": "https://consumerhelpline.gov.in/",
+            "recommended_template": "legal_notice"
+        },
+        "rti": {
+            "keywords": [
+                "rti",
+                "information",
+                "government",
+                "official",
+                "delay"
+            ],
+            "rights": [
+                "Every citizen has the right to request information from public authorities.",
+                "Information must be provided within 30 days.",
+                "If it concerns life or liberty, information must be provided within 48 hours.",
+                "No reason is required to be given for requesting information."
+            ],
+            "roadmap": [
+                "Identify the Public Authority",
+                "Draft RTI Application",
+                "Pay Fee (usually ₹10)",
+                "Submit to PIO",
+                "Wait 30 Days",
+                "First Appeal (if no response)"
+            ],
+            "priority_actions": [
+                {
+                    "text": "Identify the correct Public Information Officer (PIO).",
+                    "priority": "CRITICAL"
+                },
+                {
+                    "text": "Draft and submit the RTI application.",
+                    "priority": "HIGH"
+                },
+                {
+                    "text": "Attach the ₹10 fee (IPO or Court Fee Stamp).",
+                    "priority": "HIGH"
+                },
+                {
+                    "text": "Keep a photocopy/speed post receipt of your application.",
+                    "priority": "RECOMMENDED"
+                }
+            ],
+            "evidence_checklist": [
+                "Exact details of the information required",
+                "Proof of Residence/Identity",
+                "Speed Post tracking receipt (once sent)"
+            ],
+            "emergency_tips": [
+                "Specific details are better than general queries.",
+                "Mention 'Section 7(1)' if the information is about life or liberty.",
+                "Never reveal your mobile number if you fear harassment.",
+                "Ensure you have proof of the date of submission."
+            ],
+            "legal_aid_url": "https://rti.gov.in/",
+            "recommended_template": "rti_app"
+        },
+        "divorce": {
+            "keywords": [
+                "divorce",
+                "marriage",
+                "custody",
+                "alimony",
+                "maintenance"
+            ],
+            "rights": [
+                "Right to live separately while the case is pending.",
+                "Right to claim maintenance (interim and permanent).",
+                "Right to Streedhan (gifts given during marriage).",
+                "Right to custody of minor children (usually mother for children under 5)."
+            ],
+            "roadmap": [
+                "Consultation & Mediation",
+                "Filing Petition (Mutual or Contested)",
+                "First Motion (Statement Recording)",
+                "Cooling-off Period (6 months - can be waived)",
+                "Second Motion",
+                "Decree of Divorce"
+            ],
+            "priority_actions": [
+                {
+                    "text": "Consult a family lawyer for asset distribution.",
+                    "priority": "CRITICAL"
+                },
+                {
+                    "text": "Collect Streedhan list and proofs.",
+                    "priority": "HIGH"
+                },
+                {
+                    "text": "Attempt mediation before filing in court.",
+                    "priority": "RECOMMENDED"
+                }
+            ],
+            "evidence_checklist": [
+                "Marriage Certificate / Photos",
+                "Bank Statements of both parties",
+                "List of Streedhan/Gifts",
+                "Birth certificates of children"
+            ],
+            "emergency_tips": [
+                "Secure your financial documents and original IDs now.",
+                "Note down instances of cruelty or harassment with dates.",
+                "Consult a lawyer before moving children out of the house.",
+                "Do NOT sign 'Wait and Watch' settlements without advice."
+            ],
+            "legal_aid_url": "https://nalsa.gov.in/services/legal-aid/legal-services-clinics",
+            "recommended_template": "divorce_mutual"
+        }
+    },
+    "helplines": [
+        {
+            "name": "National Consumer Helpline",
+            "number": "1800-11-4000"
+        },
+        {
+            "name": "Women Helpline",
+            "number": "1091"
+        },
+        {
+            "name": "Child Helpline",
+            "number": "1098"
+        },
+        {
+            "name": "Legal Aid (NALSA)",
+            "number": "15100"
+        }
+    ]
+}

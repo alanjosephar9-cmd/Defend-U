@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defend U — Justice First</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://img.icons8.com/ios-filled/100/ffffff/law.png" alt="Defend U Logo" class="logo-img">
+                <div>
+                    <div class="logo-text">Defend U</div>
+                    <div class="logo-subtext">JUSTICE FIRST</div>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <div class="nav-item active" onclick="navigate('search')">
+                    <span class="nav-icon">🔍</span>
+                    <span>Research Lab</span>
+                </div>
+                <div class="nav-item" onclick="navigate('help')">
+                    <span class="nav-icon">🚨</span>
+                    <span>Legal Aid</span>
+                </div>
+                <div class="nav-item" onclick="navigate('drafting')">
+                    <span class="nav-icon">📝</span>
+                    <span>Doc Drafting</span>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                © 2026 Defend U AI Intelligence
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="main-header">
+                <div>
+                    <h1 class="page-title">Legal Intelligence Dashboard</h1>
+                    <p class="page-subtitle">AI-Powered Case Analysis & Strategy</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-emergency" onclick="toggleEmergencyMode()" title="Emergency Help">🆘 PANIC
+                        MODE</button>
+                    <div class="custom-dropdown" id="languageSelector">
+                        <div class="dropdown-trigger" onclick="toggleDropdown()">
+                            <span id="currentLangIcon">🌐</span>
+                            <span id="currentLangName">English</span>
+                        </div>
+                        <div class="dropdown-options" id="dropdownOptions">
+                            <div class="dropdown-option" onclick="selectLanguage('en', '🌐', 'English')">
+                                <span>🌐 English</span>
+                            </div>
+                            <div class="dropdown-option" onclick="selectLanguage('hi', '🌐', 'हिन्दी (Hindi)')">
+                                <span>🌐 हिन्दी (Hindi)</span>
+                            </div>
+                            <div class="dropdown-option" onclick="selectLanguage('bn', '🌐', 'বাংলা (Bengali)')">
+                                <span>🌐 বাংলা (Bengali)</span>
+                            </div>
+                            <div class="dropdown-option" onclick="selectLanguage('te', '🌐', 'తెలుగు (Telugu)')">
+                                <span>🌐 తెలుగు (Telugu)</span>
+                            </div>
+                            <div class="dropdown-option" onclick="selectLanguage('mr', '🌐', 'मराठी (Marathi)')">
+                                <span>🌐 मराठी (Marathi)</span>
+                            </div>
+                            <div class="dropdown-option" onclick="selectLanguage('ta', '🌐', 'தமிழ் (Tamil)')">
+                                <span>🌐 தமிழ் (Tamil)</span>
+                            </div>
+                            <div class="dropdown-option" onclick="selectLanguage('gu', '🌐', 'ગુજરાતી (Gujarati)')">
+                                <span>🌐 ગુજરાતી (Gujarati)</span>
+                            </div>
+                            <div class="dropdown-option" onclick="selectLanguage('kn', '🌐', 'ಕನ್ನಡ (Kannada)')">
+                                <span>🌐 ಕನ್ನಡ (Kannada)</span>
+                            </div>
+                            <div class="dropdown-option" onclick="selectLanguage('ml', '🌐', 'മലയാളം (Malayalam)')">
+                                <span>🌐 മലയാളം (Malayalam)</span>
+                            </div>
+                            <div class="dropdown-option" onclick="selectLanguage('pa', '🌐', 'ਪੰਜਾਬੀ (Punjabi)')">
+                                <span>🌐 ਪੰਜਾਬੀ (Punjabi)</span>
+                            </div>
+                            <div class="dropdown-option" onclick="selectLanguage('ur', '🌐', 'اردو (Urdu)')">
+                                <span>🌐 اردو (Urdu)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Section: Search & Analysis -->
+            <section id="section-search" class="app-section active">
+                <div class="search-section">
+                    <div class="search-box-container">
+                        <input type="text" id="query" class="search-input"
+                            placeholder="Describe your legal situation or ask a question...">
+                        <button id="voice-btn" class="voice-btn" onclick="startVoiceSearch()" title="Voice Search">
+                            <svg class="mic-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" x2="12" y1="19" y2="22"></line>
+                            </svg>
+                        </button>
+                        <button class="search-btn" onclick="searchLegal()">ANALYZE</button>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="javascript:void(0)" onclick="startGuidedInterview()"
+                            style="color: var(--accent); font-weight: 600; text-decoration: none; font-size: 0.9rem;">
+                            💡 Not sure what to ask? Try our Guided Action Interview
+                        </a>
+                    </div>
+                </div>
+
+                <div id="results" class="results-grid">
+                    <div class="empty-state">
+                        <p>Welcome to Defend U. Our AI is ready to assist with your legal research.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Emergency Legal Aid -->
+            <section id="section-help" class="app-section">
+                <div class="results-grid">
+                    <div class="card helpline-card">
+                        <span class="card-tag tag-local">Emergency</span>
+                        <h3>National Consumer Helpline</h3>
+                        <p class="phone">1800-11-4000</p>
+                        <p class="card-snippet">For grievances regarding consumer products and services.</p>
+                    </div>
+                    <div class="card helpline-card">
+                        <span class="card-tag tag-kanoon">Woman Support</span>
+                        <h3>National Commission for Women</h3>
+                        <p class="phone">7827170170</p>
+                        <p class="card-snippet">24/7 Helpline for women in distress.</p>
+                    </div>
+                    <div class="card helpline-card">
+                        <span class="card-tag tag-local">Child Rights</span>
+                        <h3>CHILDLINE India</h3>
+                        <p class="phone">1098</p>
+                        <p class="card-snippet">Night and day emergency service for children.</p>
+                    </div>
+                    <div class="card helpline-card">
+                        <span class="card-tag tag-kanoon">Legal Aid</span>
+                        <h3>NALSA Helpline</h3>
+                        <p class="phone">15100</p>
+                        <p class="card-snippet">Free legal services for the weaker sections of society.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 2rem;">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">📌 Important Information</h3>
+                    <p style="line-height: 1.6;">Under the Legal Services Authorities Act, 1987, free legal aid is
+                        available to women, children, members of SC/ST, victims of trafficking, and disabled persons,
+                        regardless of their financial status.</p>
+                </div>
+            </section>
+
+            <!-- Section: Document Drafting -->
+            <section id="section-drafting" class="app-section">
+                <div class="card" style="max-width: 800px; margin: 0 auto;">
+                    <h2 style="margin-bottom: 2rem; color: var(--primary);">Generate Legal Templates</h2>
+
+                    <div class="form-group">
+                        <label>Select Document Type</label>
+                        <select id="templateSelect" class="form-input">
+                            <option value="police_complaint">Police Complaint Form</option>
+                            <option value="legal_notice">Legal Notice to Seller</option>
+                            <option value="rti_app">RTI Application Format</option>
+                            <option value="divorce_mutual">Mutual Consent Divorce Petition</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="userName" class="form-input" placeholder="e.g. Alan Joseph">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Case Details / Subject</label>
+                        <textarea id="caseDetails" class="form-input" rows="4"
+                            placeholder="Briefly describe the incident or subject..."></textarea>
+                    </div>
+
+                    <button class="action-btn" onclick="generateDraft()">GENERATE DOCUMENT</button>
+
+                    <div id="draft-output-container"
+                        style="display: none; margin-top: 2rem; border-top: 2px solid var(--border-color); padding-top: 2rem;">
+                        <h3 style="margin-bottom: 1rem; color: var(--accent);">Your Generated Draft:</h3>
+                        <pre id="draft-text"
+                            style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px; white-space: pre-wrap; font-family: 'Courier New', monospace; font-size: 0.95rem;"></pre>
+                        <button class="action-btn" style="margin-top: 1rem;" onclick="copyDraft()">COPY TO
+                            CLIPBOARD</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
